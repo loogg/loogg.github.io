@@ -47,9 +47,9 @@ export default defineUserConfig({
       },
     }),
     // 看板娘辅助插件
-    live2DAssistPlugin({
-      subPageHidden: true,
-    }),
+    // live2DAssistPlugin({
+    //   subPageHidden: true,
+    // }),
     // 看板娘插件
     ohmylive2dPlugin({
       // 在这里进行配置
