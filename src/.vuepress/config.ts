@@ -6,6 +6,7 @@ import { popperPlugin } from "./plugins/vuepress-plugin-popper";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { hitokotoPlugin } from "./plugins/vuepress-plugin-hitokoto";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   base: "/my-blog/",
@@ -45,6 +46,10 @@ export default defineUserConfig({
         size: 1.95,
         numParticles: 10,
       },
+    }),
+    searchProPlugin({
+      // 配置选项
+      indexContent: true
     }),
     // 看板娘辅助插件
     // live2DAssistPlugin({
