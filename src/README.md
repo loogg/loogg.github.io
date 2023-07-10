@@ -5,6 +5,7 @@ icon: home
 title: 主页
 heroImage: /logo.png
 heroText: 马龙伟的博客
+bgImage: "/assets/home_bg.jpg"
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
 projects:
@@ -37,6 +38,8 @@ projects:
     name: 自定义项目
     desc: 自定义详细介绍
     link: https://你的自定义链接
+
+footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>
 ---
 
 这是一个博客主页的案例。
