@@ -9,7 +9,7 @@ export default (req, res) => {
     target,
     changeOrigin: true,
     pathRewrite: {
-      '^/bing/': '/my-blog/'
+      '^/bing/': '/'
     }
   })(req, res)
 }
