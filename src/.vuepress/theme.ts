@@ -15,7 +15,7 @@ export default MyTheme({
   themeColor: true,
   fullscreen: true,
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "iconfont",
 
   logo: "/logo.png",
 
@@ -35,7 +35,7 @@ export default MyTheme({
   displayFooter: false,
 
   blog: {
-    description: "一个前端开发者",
+    description: "纸上得来终觉浅，绝知此事要躬行",
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
@@ -44,13 +44,13 @@ export default MyTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "2544047213@qq.com",
+      Email: "mailto:2544047213@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
       GitHub: "https://github.com/loogg",
-      Gmail: "mlw199705@gmail.com",
+      Gmail: "mailto:mlw199705@gmail.com",
       // Gitlab: "https://example.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",

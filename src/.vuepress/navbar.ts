@@ -2,51 +2,25 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
   {
-    text: "博文",
-    icon: "pen-to-square",
-    prefix: "/posts/",
+    text: "agile 全家桶",
+    icon: "discover",
+    prefix: "/agile_packages/",
     children: [
-      {
-        text: "苹果",
-        icon: "pen-to-square",
-        prefix: "apple/",
-        children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
-        ],
-      },
-      {
-        text: "香蕉",
-        icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
+      { text: "agile_upgrade", icon: "github", link: "https://github.com/loogg/agile_upgrade" },
+      { text: "agile_modbus", icon: "github", link: "https://github.com/loogg/agile_modbus" },
+      { text: "agile_led", icon: "github", link: "https://github.com/loogg/agile_led" },
+      { text: "agile_button", icon: "github", link: "https://github.com/loogg/agile_button" },
+      { text: "agile_console", icon: "github", link: "https://github.com/loogg/agile_console" },
+      { text: "agile_telnet", icon: "github", link: "https://github.com/loogg/agile_telnet" },
+      { text: "agile_jsmn", icon: "github", link: "https://github.com/loogg/agile_jsmn" },
+      { text: "agile_ftp", icon: "github", link: "https://github.com/loogg/agile_ftp" },
     ],
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "软件教程",
+    icon: "software",
+    prefix: "/tutorial/",
+    children: ["VOFA+"]
   },
 ]);
