@@ -1,0 +1,1 @@
+import{ac as e}from"./app-b0372683.js";const a=()=>e({serverURL:"blog-api-sigma-eight.vercel.app"});export{a as updatePageview};
