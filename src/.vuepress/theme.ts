@@ -15,10 +15,7 @@ export default MyTheme({
   themeColor: true,
   fullscreen: true,
 
-  iconAssets: [
-    "//at.alicdn.com/t/c/font_2410206_5vb9zlyghj.css",
-    "fontawesome-with-brands"
-  ],
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.png",
 
@@ -53,6 +50,7 @@ export default MyTheme({
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
       GitHub: "https://github.com/loogg",
+      Gmail: "mlw199705@gmail.com",
       // Gitlab: "https://example.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
