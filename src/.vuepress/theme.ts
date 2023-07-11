@@ -25,7 +25,7 @@ export default MyTheme({
   repo: "https://github.com/loogg/my-blog",
 
   docsBranch: 'master',
-  docsDir: "docs",
+  docsDir: "src",
 
   // navbar
   navbar,
@@ -35,7 +35,7 @@ export default MyTheme({
 
   footer: "Powered by VuePress|Theme by Hope",
 
-  displayFooter: true,
+  displayFooter: false,
 
   blog: {
     description: "一个前端开发者",
@@ -86,6 +86,22 @@ export default MyTheme({
 
   plugins: {
     blog: true,
+    git: true,
+    comment: {
+      provider: "Waline", // Artalk | Giscus | Waline | Twikoo
+
+      // 在这里放置其他选项
+      serverURL: "blog-api-sigma-eight.vercel.app",
+      requiredMeta: ["nick"],
+      reaction: true,
+      locales: {
+        "/": {
+          placeholder:
+            "欢迎留言~ _(≧∇≦」∠)_ (填写常用邮箱即可快速收到回复通知~)",
+        },
+      },
+      // ...
+    },
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
