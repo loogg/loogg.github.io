@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://loogg.github.io/my-blog/sitemap.xml
+Sitemap: https://loogg.github.io/sitemap.xml
