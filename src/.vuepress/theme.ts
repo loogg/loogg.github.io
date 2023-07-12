@@ -19,7 +19,7 @@ export default MyTheme({
 
   logo: "/logo.png",
 
-  repo: "https://github.com/loogg/my-blog",
+  repo: "https://github.com/loogg/loogg.github.io",
 
   docsBranch: 'master',
   docsDir: "src",

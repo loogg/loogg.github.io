@@ -9,7 +9,7 @@ import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
-  base: "/my-blog/",
+  base: "/",
 
   lang: "zh-CN",
   title: "马龙伟的博客",
@@ -58,7 +58,7 @@ export default defineUserConfig({
     // 看板娘插件
     ohmylive2dPlugin({
       // 在这里进行配置
-      source: "/my-blog/assets/live2D",
+      source: "/assets/live2D",
       models: [
         {
           scale: 0.3,
