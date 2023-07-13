@@ -14,18 +14,6 @@ permissions:
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-       agile_packages:
-         - {URL: "https://github.com/loogg/agile_upgrade"}
-         - {URL: "https://github.com/loogg/agile_modbus"}
-         - {URL: "https://github.com/loogg/agile_led"}
-         - {URL: "https://github.com/loogg/agile_button"}
-         - {URL: "https://github.com/loogg/agile_console"}
-         - {URL: "https://github.com/loogg/agile_telnet"}
-         - {URL: "https://github.com/loogg/agile_jsmn"}
-         - {URL: "https://github.com/loogg/agile_ftp"}
 
     steps:
       - name: Checkout
@@ -46,12 +34,22 @@ jobs:
 
       - name: 下载 agile 全家桶
         shell: bash
-        env:
-          AGILE_PACKAGE_URL: ${{ matrix.agile_packages.URL }}
         run: |
+          AGILE_PACKAGES=(
+              "https://github.com/loogg/agile_upgrade"
+              "https://github.com/loogg/agile_modbus"
+              "https://github.com/loogg/agile_led"
+              "https://github.com/loogg/agile_button"
+              "https://github.com/loogg/agile_console"
+              "https://github.com/loogg/agile_telnet"
+              "https://github.com/loogg/agile_jsmn"
+              "https://github.com/loogg/agile_ftp"
+          )
+
           cd src/agile_packages
-          ls
-          git clone $AGILE_PACKAGE_URL
+          for var in ${AGILE_PACKAGES[@]}; do
+            git clone $var
+          done
           ls
 
       - name: 构建文档
