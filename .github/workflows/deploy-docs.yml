@@ -53,6 +53,7 @@ jobs:
             name=${url##*/}
             cd ${name}
             find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .* || true
+            sed -i "1i ---\r\nicon: page\r\narticle: false\r\nlastUpdated: false\r\ncontributors: false\r\neditLink: false\r\n---\r\n" README.md
             cd ..
           done
           ls
