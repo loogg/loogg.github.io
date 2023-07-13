@@ -52,7 +52,7 @@ jobs:
             git clone ${url}
             name=${url##*/}
             cd ${name}
-            find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .*
+            find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .* || true
             cd ..
           done
           ls
