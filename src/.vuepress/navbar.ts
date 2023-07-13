@@ -4,9 +4,10 @@ export default navbar([
   "/",
   {
     text: "agile 全家桶",
-    icon: "discover",
+    icon: "stack",
     prefix: "/agile_packages/",
     children: [
+      { text: "关于", icon: "info", link: "" },
       { text: "agile_upgrade", icon: "github", link: "https://github.com/loogg/agile_upgrade" },
       { text: "agile_modbus", icon: "github", link: "https://github.com/loogg/agile_modbus" },
       { text: "agile_led", icon: "github", link: "https://github.com/loogg/agile_led" },
