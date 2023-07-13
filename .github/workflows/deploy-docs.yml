@@ -49,7 +49,6 @@ jobs:
         env:
           AGILE_PACKAGE_URL: ${{ matrix.agile_packages.URL }}
         run: |
-          source ~/.env/env.sh
           cd src/agile_packages
           ls
           git clone $AGILE_PACKAGE_URL
