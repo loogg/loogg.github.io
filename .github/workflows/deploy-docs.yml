@@ -48,7 +48,12 @@ jobs:
 
           cd src/agile_packages
           for var in ${AGILE_PACKAGES[@]}; do
-            git clone $var
+            url=$var
+            git clone url
+            name=${url##*/}
+            cd ${name}
+            find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .*
+            cd ..
           done
           ls
 
