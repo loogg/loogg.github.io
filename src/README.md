@@ -7,11 +7,21 @@ heroImage: /logo.png
 heroText: 马龙伟的博客
 bgImage: "/assets/home_bg.jpg"
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 纸上得来终觉浅，绝知此事要躬行
 projects:
   - icon: /logo.png
+    name: 关于我
+    desc: 嵌入式工程师
+    link: /about/intro
+
+  - icon: sitemap
     name: 关于本站
     desc: 这里有关于站点的详细介绍
+    link: https://你的项目链接
+
+  - icon: creative
+    name: 小白教程
+    desc: 从零搭建博客网站
     link: https://你的项目链接
 
   - icon: project

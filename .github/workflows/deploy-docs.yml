@@ -36,14 +36,15 @@ jobs:
         shell: bash
         run: |
           AGILE_PACKAGES=(
+
               "https://github.com/loogg/agile_upgrade"
+              "https://github.com/loogg/agile_telnet"
               "https://github.com/loogg/agile_modbus"
               "https://github.com/loogg/agile_led"
-              "https://github.com/loogg/agile_button"
-              "https://github.com/loogg/agile_console"
-              "https://github.com/loogg/agile_telnet"
               "https://github.com/loogg/agile_jsmn"
               "https://github.com/loogg/agile_ftp"
+              "https://github.com/loogg/agile_console"
+              "https://github.com/loogg/agile_button"
           )
 
           cd src/agile_packages
@@ -74,12 +75,12 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
 
-      # - name: 部署服务器
-      #   uses: easingthemes/ssh-deploy@v4.1.8
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     ARGS: "-rlgoDzvc -i --delete"
-      #     SOURCE: "src/.vuepress/dist/"
-      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
-      #     TARGET: ${{ secrets.REMOTE_TARGET }}
+      - name: 部署服务器
+        uses: easingthemes/ssh-deploy@v4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "src/.vuepress/dist/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
