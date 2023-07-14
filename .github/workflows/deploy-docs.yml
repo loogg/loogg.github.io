@@ -53,7 +53,7 @@ jobs:
             name=${url##*/}
             cd ${name}
             find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .* || true
-            sed -i "1i ---\r\nicon: page\r\narticle: false\r\nlastUpdated: false\r\ncontributors: false\r\neditLink: false\r\n---\r\n" README.md
+            sed -i "1i ---\r\nicon: module\r\narticle: false\r\nlastUpdated: false\r\ncontributors: false\r\neditLink: false\r\n---\r\n" README.md
             cd ..
           done
           ls
@@ -65,9 +65,19 @@ jobs:
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: 部署文档
+      - name: 部署 Github Page
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 这是文档部署到的分支名称
           branch: gh-pages
           folder: src/.vuepress/dist
+
+      - name: 部署服务器
+        uses: easingthemes/ssh-deploy@v4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "src/.vuepress/dist/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}

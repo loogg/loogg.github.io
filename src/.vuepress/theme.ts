@@ -36,7 +36,7 @@ export default MyTheme({
 
   blog: {
     description: "纸上得来终觉浅，绝知此事要躬行",
-    intro: "/intro.html",
+    intro: "/about/intro.html",
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",

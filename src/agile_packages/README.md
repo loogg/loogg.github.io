@@ -7,6 +7,7 @@ tag:
   - link
 star: 100
 sticky: 100
+index: false
 ---
 
 <AutoCatalog />
