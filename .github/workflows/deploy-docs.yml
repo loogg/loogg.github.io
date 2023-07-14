@@ -56,6 +56,7 @@ jobs:
             sed -i "1i ---\r\nicon: module\r\narticle: false\r\nlastUpdated: false\r\ncontributors: false\r\neditLink: false\r\n---\r\n" README.md
             cd ..
             sed -i "11i \      { text: \"${name}\", icon: \"github\", link: \"${url}\" }," ../.vuepress/navbar.ts
+            sed -i "23i \    \"${name}/\"," ../.vuepress/sidebar.ts
           done
           ls
 

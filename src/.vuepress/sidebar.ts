@@ -19,5 +19,6 @@ export default sidebar({
     "intro",
     "slides",
   ],
-  "/agile_packages/": "structure",
+  "/agile_packages/": [
+  ],
 });
