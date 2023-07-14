@@ -78,6 +78,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
           SOURCE: "src/.vuepress/dist/"
-          REMOTE_HOST: 175.24.175.4
-          REMOTE_USER: ubuntu
-          TARGET: /home/ubuntu/blog/
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
