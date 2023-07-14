@@ -55,6 +55,7 @@ jobs:
             find *|grep -v '\<README.md\|figures\>' |xargs rm -rf .* || true
             sed -i "1i ---\r\nicon: module\r\narticle: false\r\nlastUpdated: false\r\ncontributors: false\r\neditLink: false\r\n---\r\n" README.md
             cd ..
+            sed -i "11i \      { text: \"${name}\", icon: \"github\", link: \"${url}\" }," ../.vuepress/navbar.ts
           done
           ls
 
@@ -72,12 +73,12 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
 
-      - name: 部署服务器
-        uses: easingthemes/ssh-deploy@v4.1.8
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "src/.vuepress/dist/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+      # - name: 部署服务器
+      #   uses: easingthemes/ssh-deploy@v4.1.8
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     ARGS: "-rlgoDzvc -i --delete"
+      #     SOURCE: "src/.vuepress/dist/"
+      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      #     TARGET: ${{ secrets.REMOTE_TARGET }}
