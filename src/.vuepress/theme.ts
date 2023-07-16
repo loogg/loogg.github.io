@@ -71,18 +71,18 @@ export default MyTheme({
     },
   },
 
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
   // page meta
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
+    components:{
+      components:[
+        "BiliBili",
+        "VideoPlayer"
+      ]
+    },
     blog: true,
     git: true,
     comment: {

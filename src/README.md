@@ -17,12 +17,17 @@ projects:
   - icon: sitemap
     name: 关于本站
     desc: 这里有关于站点的详细介绍
-    link: https://你的项目链接
+    link: /about/about
 
   - icon: creative
     name: 小白教程
     desc: 从零搭建博客网站
     link: https://你的项目链接
+
+  - icon: autumn
+    name: 菜谱指南
+    desc: 🍲 OK, Let's Cook!
+    link: /cook
 
   - icon: project
     name: agile 全家桶

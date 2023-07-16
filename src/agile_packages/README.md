@@ -2,8 +2,9 @@
 title: agile 全家桶
 icon: info
 category:
-  - 软件包
+  - agile 全家桶
 tag:
+  - agile 全家桶
   - link
 star: 100
 sticky: 100
