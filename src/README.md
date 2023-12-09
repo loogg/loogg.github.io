@@ -24,10 +24,15 @@ projects:
     desc: 从零搭建博客网站
     link: https://你的项目链接
 
-  - icon: autumn
-    name: 菜谱指南
-    desc: 🍲 OK, Let's Cook!
-    link: /cook
+  - icon: read
+    name: 学习笔记
+    desc: 我的学习笔记
+    link: /note
+
+  # - icon: autumn
+  #   name: 菜谱指南
+  #   desc: 🍲 OK, Let's Cook!
+  #   link: /cook
 
   - icon: project
     name: agile 全家桶

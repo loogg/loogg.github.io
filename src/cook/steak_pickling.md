@@ -6,6 +6,7 @@ category:
 tag:
   - 菜谱
   - 视频
+article: false
 ---
 
 ## 准备工作
