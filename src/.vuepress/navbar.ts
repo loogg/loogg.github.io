@@ -20,7 +20,7 @@ export default navbar([
     text: "学习笔记",
     icon: "read",
     prefix: "/note/",
-    children: ["MCU/"]
+    children: ["MCU/", "C_C++/", "VSCode/"]
   },
   {
     text: "关于",

@@ -6,4 +6,5 @@ export default sidebar({
   "/cook/": "structure",
   "/video/":"structure",
   "/tutorial/":"structure",
+  "/note/":"structure",
 });
