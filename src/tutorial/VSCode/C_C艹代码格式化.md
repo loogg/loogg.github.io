@@ -1,7 +1,8 @@
 ---
 title: C/C++代码格式化
 category:
-  - 笔记
+  - 软件/工具
+  - 教程
 tag:
   - C/C++
   - VS Code
