@@ -14,13 +14,13 @@ export default navbar([
     text: "软件教程",
     icon: "software",
     prefix: "/tutorial/",
-    children: ["VOFA+/", "VSCode/", "git/"]
+    children: ["tool/"]
   },
   {
     text: "学习笔记",
     icon: "read",
     prefix: "/note/",
-    children: ["MCU/", "C/"]
+    children: ["MCU/", "C_Cpp/"]
   },
   {
     text: "关于",
