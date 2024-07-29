@@ -10,18 +10,8 @@ export default navbar([
       { text: "关于", icon: "info", link: "" },
     ],
   },
-  {
-    text: "软件教程",
-    icon: "software",
-    prefix: "/tutorial/",
-    children: ["tool/"]
-  },
-  {
-    text: "学习笔记",
-    icon: "read",
-    prefix: "/note/",
-    children: ["MCU/", "C_Cpp/"]
-  },
+  "/tutorial",
+  "/note",
   {
     text: "关于",
     icon: "info",
