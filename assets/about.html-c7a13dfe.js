@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as o,a as e,b as c}from"./app-13c38005.js";const r={},s=e("h1",{id:"关于本站",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#关于本站","aria-hidden":"true"},"#"),c(" 关于本站")],-1),n=[s];function _(d,i){return a(),o("div",null,n)}const l=t(r,[["render",_],["__file","about.html.vue"]]);export{l as default};
